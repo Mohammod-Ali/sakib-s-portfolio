@@ -2,19 +2,19 @@ const Award = () => {
   const cardData = [
     {
       id: 1,
-      img: "/src/assets/award.jpeg",
+      img: "/photos/award.jpeg",
       title: "Outstanding Contribution Award",
       description: `It has been an inspiring four-year journey with It’s Humanity Foundation, starting from a simple internship and gradually growing into greater responsibility. Throughout this time, I learned valuable lessons, contributed to meaningful projects, and connected with incredible people who supported my development. This experience shaped my personal and professional identity, allowing me to grow with purpose, dedication, and a commitment to serving communities with genuine passion.`,
     },
     {
       id: 2,
-      img: "/src/assets/award2.jpeg",
+      img: "/photos/award2.jpeg",
       title: "Awarded by United Nations",
       description: `Photography began as a simple hobby, yet it led me to an unexpected milestone when my image was selected for the UN80 Youth Photo Contest, “Youth as Catalysts of Change.” This recognition from the United Nations encouraged me to continue creating meaningful work through It’s Humanity Foundation. I remain deeply grateful for this honor, and for the people whose love, guidance, and constant encouragement continue to inspire my creative journey every day.`,
     },
     {
       id: 3,
-      img: "/src/assets/award1.jpeg",
+      img: "/photos/award1.jpeg",
       title: "Awarded for outstanding contribution",
       description: `This moment reflects the honor of receiving the Outstanding Contribution Award (2021–2022) from It’s Humanity Foundation, acknowledging a year of dedication and impactful service. The award symbolizes meaningful involvement in community-focused initiatives and a commitment to positive change. It serves as a reminder of the value of purposeful work and reinforces my motivation to continue contributing, learning, and growing through initiatives that support people and create lasting, transformative outcomes.`,
     },
