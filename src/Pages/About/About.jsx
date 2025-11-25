@@ -7,7 +7,7 @@ const About = () => {
         <div className="flex-1">
           <div className="relative overflow-hidden rounded-3xl shadow-xl">
             <img
-              src="/src/assets/award2.jpeg" // replace with your image path
+              src="/photos/award2.jpeg" // replace with your image path
               alt="About Me"
               className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
             />

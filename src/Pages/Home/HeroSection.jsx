@@ -3,7 +3,7 @@ const HeroSection = () => {
     <div className="hero bg-base-content text-white min-h-screen ">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <img
-          src="/src/assets/sakib.jpeg"
+          src="/photos/sakib.jpeg"
           className="max-w-sm rounded-lg shadow-2xl "
         />
         <div>

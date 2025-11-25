@@ -6,32 +6,32 @@ import { motion } from "framer-motion";
 // Replace these with your actual photo URLs (use your own images!)
 const photos = [
   {
-    src: "/src/assets/image1.jpeg",
+    src: "/photos/image1.jpeg",
     title: "River of Dreams",
     category: "Lifestyle / Travel",
   },
   {
-    src: "/src/assets/image (2).png",
+    src: "/photos/image (2).png",
     title: "Small Hands, Full Hearts",
     category: "Community / Childhood",
   },
   {
-    src: "/src/assets/image (3).png",
+    src: "/photos/image (3).png",
     title: "A Thousand Futures",
     category: "Education / Hope",
   },
   {
-    src: "/src/assets/image (4).png",
+    src: "/photos/image (4).png",
     title: "Hello from the Other Side",
     category: "Street / Joy",
   },
   {
-    src: "/src/assets/image5.png",
+    src: "/photos/image5.png",
     title: "The Weight of Laughter",
     category: "Daily Life / Labor",
   },
   {
-    src: "/src/assets/image6.png",
+    src: "/photos/image6.png",
     title: "Threads of Time",
     category: "Portrait / Culture",
   },
