@@ -1,13 +1,16 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useState } from "react";
+import { motion } from "framer-motion";
+import { MdEmail } from "react-icons/md";
+import { FaFacebook, FaInstagram, FaLinkedinIn, FaPhone } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
-  const [status, setStatus] = useState(''); // 'sending', 'success', 'error'
+  const [status, setStatus] = useState(""); // 'sending', 'success', 'error'
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -15,20 +18,19 @@ export default function Contact() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setStatus('sending');
+    setStatus("sending");
 
     // Simulate sending (replace with your real Formspree/Netlify/EmailJS later)
     setTimeout(() => {
-      setStatus('success');
-      setFormData({ name: '', email: '', message: '' });
-      setTimeout(() => setStatus(''), 4000);
+      setStatus("success");
+      setFormData({ name: "", email: "", message: "" });
+      setTimeout(() => setStatus(""), 4000);
     }, 1500);
   };
 
   return (
     <section id="contact" className="py-28 bg-black text-white">
       <div className="max-w-4xl mx-auto px-6">
-
         {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 40 }}
@@ -37,12 +39,13 @@ export default function Contact() {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold mb-4">Get in Touch</h2>
-          <p className="text-gray-500 text-lg">Let’s tell your story together</p>
+          <p className="text-gray-300 text-lg">
+            Let’s tell your story together
+          </p>
           <div className="h-px w-24 bg-cyan-500 mx-auto mt-6"></div>
         </motion.div>
 
         <div className="grid md:grid-cols-2 gap-12">
-
           {/* Left: Info */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}
@@ -52,29 +55,43 @@ export default function Contact() {
           >
             <h3 className="text-2xl font-bold text-cyan-400">Let's connect</h3>
             <p className="text-gray-400 leading-relaxed">
-              I'm always open to discussing photography projects, collaborations, or just having a chat about life behind the lens.
+              I'm always open to discussing photography projects,
+              collaborations, or just having a chat about life behind the lens.
             </p>
 
             <div className="space-y-5 text-gray-300">
               <div className="flex items-center gap-4">
-                <span className="text-cyan-400 text-xl">✉</span>
-                <span>you@example.com</span>
+                <span className="text-cyan-400 text-xl">
+                  <MdEmail></MdEmail>
+                </span>
+                <span>sakiab@itshumanity.org</span>
               </div>
               <div className="flex items-center gap-4">
-                <span className="text-cyan-400 text-xl">☎</span>
-                <span>+880 1XXX XXXXXX</span>
+                <span className="text-cyan-400 text-xl">
+                  <FaPhone></FaPhone>
+                </span>
+                <span>+8801909372038</span>
               </div>
               <div className="flex items-center gap-4">
-                <span className="text-cyan-400 text-xl">Location</span>
-                <span> Dhaka, Bangladesh</span>
+                <span className="text-cyan-400 text-xl"><FaLocationDot /> </span>
+                <span>
+                  {" "}
+                  House 137, Road 5, Block B, Bashundhara R/A, Dhaka 1229
+                </span>
               </div>
             </div>
 
-            <div className="flex gap-6 text-3xl pt-4">
-              <a href="#" className="hover:text-cyan-400 transition">LI</a>
-              <a href="#" className="hover:text-cyan-400 transition">GH</a>
-              <a href="#" className="hover:text-cyan-400 transition">IG</a>
-            </div>
+            {/* <div className="flex gap-6 text-3xl pt-4">
+              <a href="#" className="hover:text-cyan-400 hover-3d transition">
+                <FaLinkedinIn></FaLinkedinIn>
+              </a>
+              <a href="#" className="hover:text-cyan-400 hover-3d  transition">
+               <FaFacebook></FaFacebook>
+              </a>
+              <a href="#" className="hover:text-cyan-400 hover-3d  transition">
+                <FaInstagram></FaInstagram>
+              </a>
+            </div> */}
           </motion.div>
 
           {/* Right: Form */}
@@ -122,12 +139,12 @@ export default function Contact() {
 
               <button
                 type="submit"
-                disabled={status === 'sending'}
+                disabled={status === "sending"}
                 className="w-full bg-cyan-500 hover:bg-cyan-400 text-black font-semibold py-4 rounded-lg flex items-center justify-center gap-3 transition-all duration-300 disabled:opacity-70"
               >
-                {status === 'sending' ? (
+                {status === "sending" ? (
                   <>Sending...</>
-                ) : status === 'success' ? (
+                ) : status === "success" ? (
                   <>Message Sent!</>
                 ) : (
                   <>Send Message</>
@@ -135,7 +152,7 @@ export default function Contact() {
               </button>
 
               {/* Success Message */}
-              {status === 'success' && (
+              {status === "success" && (
                 <motion.p
                   initial={{ opacity: 0, y: 10 }}
                   animate={{ opacity: 1, y: 0 }}

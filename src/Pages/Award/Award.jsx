@@ -21,8 +21,8 @@ const Award = () => {
   ];
 
   return (
-    <div className="bg-base-100 text-black">
-      <h2 className="text-4xl mt-16 font-bold text-center">Awards</h2>
+    <div className="bg-base-300 py-14 text-black">
+      <h2 className="text-4xl my-16  font-bold text-center">Awards</h2>
 
       <div className="flex flex-col sm:flex-row gap-16 justify-center items-center my-16">
 
