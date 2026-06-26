@@ -10,7 +10,7 @@ import {
   Facebook,
   Instagram,
 } from "lucide-react";
-import { FaDownload, FaPhone } from "react-icons/fa";
+import { FaDownload, FaPhone, FaWhatsapp } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { MdEmail, MdOutlineEmail } from "react-icons/md";
 
@@ -21,7 +21,7 @@ export default function Resume() {
   const personalInfo = {
     name: "Shaharul Islam Sakib",
     title: "Senio Officer at IHF & Photographer",
-    email: "sakib@itshumanity.org",
+    email: "shaharul2911@gmail.com",
     phone: "+8801909372038",
     location: "Bashundhara R/A, Dhaka, Bangladesh",
     linkedin:
@@ -29,12 +29,23 @@ export default function Resume() {
     facebook: "https://www.facebook.com/shaharulislam.sakib",
     instagram:
       "https://www.instagram.com/shaharulislamsakib?igsh=dmJ2eWZzeHZkbDlo",
+    whatsapp: "https://wa.me/+8801909372038",
     resumePDF: "/resume.pdf", // put your PDF in public folder
   };
 
   const experiences = [
     {
       year: "JAN 2024 - PRESENT",
+      title: "Assistant Manager",
+      company: "It’s Humanity Foundation ",
+      desc: `● Lead and oversee communication, branding, and public relations strategies to strengthen the organization's visibility and impact.
+      ● Supervise cross-functional teams, manage stakeholder and donor engagement, and build strategic partnerships to support organizational growth.
+      ● Develop and implement communication plans, media campaigns, and storytelling initiatives aligned with SDG-focused programs and fundraising objectives.
+      ● Coordinate organizational events, monitor project visibility, and ensure consistent brand representation across digital, print, and media platforms.
+      `,
+    },
+    {
+      year: "JAN 2024 - Jan 2025",
       title: "Senior Officer",
       company: "It’s Humanity Foundation ",
       desc: `● Lead organizational communication, branding, and PR strategy.
@@ -62,7 +73,7 @@ export default function Resume() {
       company: "It’s Humanity Foundation",
       desc: `● Conducted field data collection and supported project documentation.
 ● Contributed to drafting impact stories for education and relief programs`,
-},
+    },
   ];
 
   const education = [
@@ -71,8 +82,16 @@ export default function Resume() {
       degree: "Bachelor of Science, Department of Zoology",
       institution: "DHAKA COLLEGE, DHAKA",
     },
-    { year: "Completed in 2016", degree: "HSC", institution: "LIONS SCHOOL & COLLEGE, SYEDPUR" },
-    { year: "Completed in 2014", degree: "SSC", institution: "AL FARUGUE ACADEMY, SYEDPUR" },
+    {
+      year: "Completed in 2016",
+      degree: "HSC",
+      institution: "LIONS SCHOOL & COLLEGE, SYEDPUR",
+    },
+    {
+      year: "Completed in 2014",
+      degree: "SSC",
+      institution: "AL FARUGUE ACADEMY, SYEDPUR",
+    },
   ];
 
   const skills = [
@@ -120,8 +139,12 @@ export default function Resume() {
                     <MdOutlineEmail />
                   </span>
                   <span>
-                    <a href={`mailto:${personalInfo.email}`} target="_blank" rel="noreferrer">
-                      {personalInfo.email} 
+                    <a
+                      href={`mailto:${personalInfo.email}`}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {personalInfo.email}
                     </a>
                   </span>
                 </div>
@@ -129,10 +152,12 @@ export default function Resume() {
                   <span className="text-cyan-400 text-xl">
                     <FaPhone></FaPhone>
                   </span>
-                  
+
                   <span>
-                    <a href={`tel:${personalInfo.phone}`}>{personalInfo.phone}</a>
-                    </span>
+                    <a href={`tel:${personalInfo.phone}`}>
+                      {personalInfo.phone}
+                    </a>
+                  </span>
                 </div>
                 <div className="flex items-center gap-4">
                   <span className="text-cyan-400 text-xl">
@@ -141,7 +166,7 @@ export default function Resume() {
                   <span>{personalInfo.location}</span>
                 </div>
               </div>
-
+              {/* personal info card icon start here */}
               <div className="flex gap-6 mt-8 text-2xl">
                 <a
                   href={personalInfo.linkedin}
@@ -167,8 +192,16 @@ export default function Resume() {
                 >
                   <Instagram></Instagram>
                 </a>
+                <a
+                  href={personalInfo.whatsapp}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="hover:text-cyan-400 hover-3d transition"
+                >
+                  <FaWhatsapp></FaWhatsapp>
+                </a>
               </div>
-
+              {/* personal info card icon end here  */}
               <a
                 href={personalInfo.resumePDF}
                 download

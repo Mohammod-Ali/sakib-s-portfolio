@@ -17,7 +17,7 @@ const HeroSection = () => {
             I'm a{" "}
             <span className="text-cyan-500">
               <LoopTypewriter
-                words={["Senior Officer at (IHF)", "Photographer", "Story teller", ]}
+                words={["Assistant Manager at (IHF)", "Photographer", "Story teller", ]}
                 typeSpeed={70}
                 deleteSpeed={40}
                 delayBetweenWords={1000}

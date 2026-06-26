@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { MdEmail } from "react-icons/md";
-import { FaFacebook, FaInstagram, FaLinkedinIn, FaPhone } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaLinkedinIn, FaPhone, FaWhatsapp } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
 export default function Contact() {
@@ -64,13 +64,33 @@ export default function Contact() {
                 <span className="text-cyan-400 text-xl">
                   <MdEmail></MdEmail>
                 </span>
-                <span>sakiab@itshumanity.org</span>
+                <span>
+                   <a
+                      href={`mailto:shaharul2911@gmail.com`}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      shaharul2911@gmail.com
+                    </a>
+                </span>
               </div>
               <div className="flex items-center gap-4">
                 <span className="text-cyan-400 text-xl">
                   <FaPhone></FaPhone>
                 </span>
-                <span>+8801909372038</span>
+                <span>
+                  <a href={`tel:+8801909372038`}>+8801909372038</a>
+                </span>
+              </div>
+              <div className="flex items-center gap-4">
+                <span className="text-cyan-400 text-xl">
+                  <FaWhatsapp></FaWhatsapp>
+                </span>
+                <span>
+                  <a href={`https://wa.me/+8801909372038`} target="_blank" rel="noreferrer">
+                    Whatsapp Chat
+                  </a>
+                </span>
               </div>
               <div className="flex items-center gap-4">
                 <span className="text-cyan-400 text-xl"><FaLocationDot /> </span>
