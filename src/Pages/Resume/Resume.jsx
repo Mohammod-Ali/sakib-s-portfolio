@@ -119,13 +119,20 @@ export default function Resume() {
                   <span className="text-cyan-400 text-xl">
                     <MdOutlineEmail />
                   </span>
-                  <span>{personalInfo.email}</span>
+                  <span>
+                    <a href={`mailto:${personalInfo.email}`} target="_blank" rel="noreferrer">
+                      {personalInfo.email} 
+                    </a>
+                  </span>
                 </div>
                 <div className="flex items-center gap-4">
                   <span className="text-cyan-400 text-xl">
                     <FaPhone></FaPhone>
                   </span>
-                  <span>{personalInfo.phone}</span>
+                  
+                  <span>
+                    <a href={`tel:${personalInfo.phone}`}>{personalInfo.phone}</a>
+                    </span>
                 </div>
                 <div className="flex items-center gap-4">
                   <span className="text-cyan-400 text-xl">
