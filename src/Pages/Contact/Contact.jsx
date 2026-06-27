@@ -1,7 +1,13 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { MdEmail } from "react-icons/md";
-import { FaFacebook, FaInstagram, FaLinkedinIn, FaPhone, FaWhatsapp } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedinIn,
+  FaPhone,
+  FaWhatsapp,
+} from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 
 export default function Contact() {
@@ -65,13 +71,23 @@ export default function Contact() {
                   <MdEmail></MdEmail>
                 </span>
                 <span>
-                   <a
-                      href={`mailto:shaharul2911@gmail.com`}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      shaharul2911@gmail.com
-                    </a>
+                  <a
+                    href={`mailto:shaharul2911@gmail.com`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    shaharul2911@gmail.com
+                  </a>
+                  <br />
+                  or
+                  <br />
+                  <a
+                    href={`mailto:sakib@itshumanity.org`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    sakib@itshumanity.org
+                  </a>
                 </span>
               </div>
               <div className="flex items-center gap-4">
@@ -87,13 +103,19 @@ export default function Contact() {
                   <FaWhatsapp></FaWhatsapp>
                 </span>
                 <span>
-                  <a href={`https://wa.me/+8801909372038`} target="_blank" rel="noreferrer">
+                  <a
+                    href={`https://wa.me/+8801909372038`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Whatsapp Chat
                   </a>
                 </span>
               </div>
               <div className="flex items-center gap-4">
-                <span className="text-cyan-400 text-xl"><FaLocationDot /> </span>
+                <span className="text-cyan-400 text-xl">
+                  <FaLocationDot />{" "}
+                </span>
                 <span>
                   {" "}
                   House 137, Road 5, Block B, Bashundhara R/A, Dhaka 1229

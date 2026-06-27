@@ -21,7 +21,7 @@ const Award = () => {
   ];
 
   return (
-    <div className="bg-base-300 py-14 text-black">
+    <div className="bg-base-300 py-14 text-base-content">
       <h2 className="text-4xl my-16  font-bold text-center">Awards</h2>
 
       <div className="flex flex-col sm:flex-row gap-16 justify-center items-center my-16">
@@ -36,7 +36,7 @@ const Award = () => {
 
           return (
             <div
-              className="card flex flex-col lg:card-side bg-base-200 shadow-sm w-96"
+              className="card flex flex-col lg:card-side bg-base-200 text-base-content shadow-sm w-96"
               key={card.id}
             >
               <figure>

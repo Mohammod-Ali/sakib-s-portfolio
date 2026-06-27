@@ -16,7 +16,7 @@ export default function About() {
   useEffect(() => {
     const id = setInterval(
       () => setSlide((prev) => (prev + 1) % carouselImages.length),
-      4000
+      4000,
     );
     return () => clearInterval(id);
   }, []);
@@ -153,21 +153,20 @@ export default function About() {
 
             {/* bio */}
             <p className="text-gray-300 text-lg leading-relaxed max-w-4xl my-20 text-justify">
-              I am Md. Shaharul Islam Sakib, a 27-year-old communication
-              professional born and raised in the vibrant city of Saidpur.
-              Currently, I serve as a Senior Officer – Communication & PR at
+              My name is Md. Shaharul Islam Sakib. I am a 28-year-old communication professional who was born and raised in the vibrant city of Saidpur.
+              Currently, I serve as a Assistant Manager – Communication & PR at
               It’s Humanity Foundation (IHF), where I lead strategic
               communication, storytelling, branding, and donor engagement to
               promote education, empowerment, and social inclusion across
               Bangladesh.
               <br /> <br />
               Over the years at IHF—from Intern to Trainee, Management Trainee,
-              and now Senior Officer—I have built a strong foundation in
-              strategic communication, visual storytelling, project
-              coordination, and partnership management. My contributions have
-              been recognized through several awards, including the Founder’s
-              Award (2022–2023) and multiple Outstanding Contribution awards.
-              These achievements reflect my dedication, consistency, and
+              Senior Officer, and now Assistant Manager—I have built a strong
+              foundation in strategic communication, visual storytelling,
+              project coordination, and partnership management. My contributions
+              have been recognized through several awards, including the
+              Founder’s Award (2022–2023) and multiple Outstanding Contribution
+              awards. These achievements reflect my dedication, consistency, and
               commitment to creating meaningful social impact.
               <br /> <br />
               Beyond my professional responsibilities, photography is one of my
@@ -187,8 +186,6 @@ export default function About() {
               and storytelling to create powerful narratives that promote
               inclusion, empathy, and sustainable development.
             </p>
-
-            
           </div>
         </div>
       </div>

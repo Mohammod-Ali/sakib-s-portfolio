@@ -20,7 +20,7 @@ export default function Resume() {
 
   const personalInfo = {
     name: "Shaharul Islam Sakib",
-    title: "Senio Officer at IHF & Photographer",
+    title: "Assistant Manager at IHF & Photographer",
     email: "shaharul2911@gmail.com",
     phone: "+8801909372038",
     location: "Bashundhara R/A, Dhaka, Bangladesh",
@@ -35,17 +35,18 @@ export default function Resume() {
 
   const experiences = [
     {
-      year: "JAN 2024 - PRESENT",
+      year: "JAN 2026 - PRESENT",
       title: "Assistant Manager",
       company: "It’s Humanity Foundation ",
-      desc: `● Lead and oversee communication, branding, and public relations strategies to strengthen the organization's visibility and impact.
-      ● Supervise cross-functional teams, manage stakeholder and donor engagement, and build strategic partnerships to support organizational growth.
-      ● Develop and implement communication plans, media campaigns, and storytelling initiatives aligned with SDG-focused programs and fundraising objectives.
-      ● Coordinate organizational events, monitor project visibility, and ensure consistent brand representation across digital, print, and media platforms.
+      desc: `● Lead organizational communication, branding, and public relations strategies.
+      ● Manage partnerships, donor engagement, and storytelling initiatives
+      ● Develop media content, press releases, and social media campaigns aligned with SDG-focused projects.
+      ● Coordinate program visibility and communications for education, livelihood, and emergency response initiatives.
+      ● Strengthen team leadership, decision-making, and cross-functional coordination.
       `,
     },
     {
-      year: "JAN 2024 - Jan 2025",
+      year: "JAN 2024 - Dec 2025",
       title: "Senior Officer",
       company: "It’s Humanity Foundation ",
       desc: `● Lead organizational communication, branding, and PR strategy.
