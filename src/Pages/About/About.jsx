@@ -7,12 +7,12 @@ const carouselImages = [
   "/photos/image13.jpeg",
   "/photos/image8.jpeg",
   "/photos/image7.jpeg",
-  "/public/photos/about_img/WhatsApp Image 1.jpeg",
-  '/public/photos/about_img/WhatsApp Image 2.jpeg',
-  '/public/photos/about_img/WhatsApp Image 3.jpeg',
-  '/public/photos/about_img/WhatsApp Image 4.jpeg',
-  '/public/photos/about_img/WhatsApp Image 5.jpeg',
-  '/public/photos/about_img/WhatsApp Image 6.jpeg', 
+  "/photos/about_img/WhatsApp Image 1.jpeg",
+  '/photos/about_img/WhatsApp Image 2.jpeg',
+  '/photos/about_img/WhatsApp Image 3.jpeg',
+  '/photos/about_img/WhatsApp Image 4.jpeg',
+  '/photos/about_img/WhatsApp Image 5.jpeg',
+  '/photos/about_img/WhatsApp Image 6.jpeg', 
 ];
 
 
