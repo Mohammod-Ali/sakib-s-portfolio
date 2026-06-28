@@ -36,18 +36,8 @@ const photos = [
     category: "Portrait / Culture",
   },
   // {
-  //   src: "/photos/image6.png",
-  //   title: "Threads of Time",
-  //   category: "Portrait / Culture",
-  // },
-  // {
   //   src: "/photos/image7.jpeg",
   //   title: "Sowing Hope",
-  //   category: "Portrait / Culture",
-  // },
-  // {
-  //   src: "/photos/image8.jpeg",
-  //   title: "Winter Relief Drive",
   //   category: "Portrait / Culture",
   // },
   // {
@@ -56,21 +46,46 @@ const photos = [
   //   category: "Portrait / Culture",
   // },
   // {
-  //   src: "/photos/image10.jpeg",
-  //   title: "Sketching the Future",
-  //   category: "Portrait / Culture",
-  // },
-  // {
-  //   src: "/photos/image11.jpeg",
-  //   title: "It’s Humanity Foundation – Relief Distribution",
-  //   category: "Portrait / Culture",
-  // },
-  // {
   //   src: "/photos/image12.jpeg",
   //   title: "Be a Handwashing Hero – School Awareness Program",
   //   category: "Portrait / Culture",
   // },
- 
+  {
+    src: "/photos/image17.jpeg",
+    title: "Cow Grazing in Bandarban Foothills",
+    category: "Portrait Photography",
+  },
+  {
+    src: "/photos/image18.jpeg",
+    title: "Children Beside Flood Relief",
+    category: "Documentary Photography",
+  },
+  {
+    src: "/photos/image19.jpeg",
+    title: "Dhaka from Above",
+    category: "Aerial Photography",
+  },
+  {
+    src: "/photos/image20.jpeg",
+    title: "Schoolgirls Crossing the Rice Fields",
+    category: "Lifestyle Photography",
+  },
+  {
+    src: "/photos/image21.jpeg",
+    title: "Mother and Child",
+    category: "Documentary Photography",
+  },
+  {
+    src: "/photos/image22.jpeg",
+    title: "Students' Uprising", 
+    category: "Photojournalism",
+  },
+  {
+    src: "/photos/image23.jpeg",
+    title: "Spirit of Bangladesh",
+    category: "Photojournalism",
+  },
+  
 ];
 
 const MyWork = () => {
@@ -140,11 +155,11 @@ const MyWork = () => {
             <div className="lg:w-auto lg:h-60 mt-20 flex flex-col md:flex-row overflow-hidden gap-2  font-sans">
               {/* RIGHT – Instagram */}
               <a
-                href="https://www.instagram.com/shaharul_sakib_?igsh=MTQ1dXNrbHFwa3p4Mg%253D%253D&utm_source=qr" // ← change to your real IG
+                href="https://www.instagram.com/shaharul_sakib_?igsh=MTQ1dXNrbHFwa3p4Mg%253D%253D&utm_source=qr" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative rounded-lg p-5 flex-1 flex items-center justify-center bg-cover bg-center group transition-all duration-500 hover:flex-[2]"
-                style={{ backgroundImage: "url('/photos/Screenshot.png')" }} // ← put your right image here
+                style={{ backgroundImage: "url('/photos/Screenshot.png')" }} 
               >
                 <div className="absolute inset-0 bg-gray-900/80 group-hover:bg-gray-800/90 transition"></div>
                 <div className="relative z-10 text-white text-center">

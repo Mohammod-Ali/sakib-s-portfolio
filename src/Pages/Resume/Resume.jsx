@@ -22,6 +22,7 @@ export default function Resume() {
     name: "Shaharul Islam Sakib",
     title: "Assistant Manager at IHF & Photographer",
     email: "shaharul2911@gmail.com",
+    email2: "sakib@itshumanity.org",
     phone: "+8801909372038",
     location: "Bashundhara R/A, Dhaka, Bangladesh",
     linkedin:
@@ -135,6 +136,20 @@ export default function Resume() {
               <p className={`text-xl mb-8 ${accent}`}>{personalInfo.title}</p>
 
               <div className="space-y-5 text-gray-400">
+                <div className="flex items-center gap-4">
+                  <span className="text-cyan-400 text-xl">
+                    <MdOutlineEmail />
+                  </span>
+                  <span>
+                    <a
+                      href={`mailto:${personalInfo.email2}`}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {personalInfo.email2}
+                    </a>
+                  </span>
+                </div>
                 <div className="flex items-center gap-4">
                   <span className="text-cyan-400 text-xl">
                     <MdOutlineEmail />

@@ -72,21 +72,25 @@ export default function Contact() {
                 </span>
                 <span>
                   <a
-                    href={`mailto:shaharul2911@gmail.com`}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    shaharul2911@gmail.com
-                  </a>
-                  <br />
-                  or
-                  <br />
-                  <a
                     href={`mailto:sakib@itshumanity.org`}
                     target="_blank"
                     rel="noreferrer"
                   >
                     sakib@itshumanity.org
+                  </a>
+                </span>
+              </div>
+              <div className="flex items-center gap-4">
+                <span className="text-cyan-400 text-xl">
+                  <MdEmail></MdEmail>
+                </span>
+                <span>
+                  <a
+                    href={`mailto:shaharul2911@gmail.com`}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    shaharul2911@gmail.com
                   </a>
                 </span>
               </div>
